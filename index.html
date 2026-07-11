@@ -10,15 +10,30 @@ content="width=device-width, initial-scale=1.0">
 
 <title>AI Assistant Pro</title>
 
-<link rel="stylesheet"
+<link
+rel="stylesheet"
 href="css/style.css">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github-dark.min.css">
+<link
+rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link
+rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 
 </head>
 
@@ -26,87 +41,81 @@ href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github-
 
 <div class="app">
 
-<div class="sidebar">
+    <aside class="sidebar">
 
-<div class="logo">
+        <div class="logo">
 
-🤖 AI Assistant
+            🤖 AI Assistant
 
-</div>
+        </div>
 
-<button id="newChat">
+        <button
+        id="newChat"
+        class="new-chat">
 
-+ New Chat
+            + New Chat
 
-</button>
+        </button>
 
-<div id="history">
+        <div
+        id="history"
+        class="history">
 
-</div>
+        </div>
 
-</div>
+    </aside>
 
-<div class="main">
+    <main class="main">
 
-<header>
+        <div
+        id="chatContainer"
+        class="chat-container">
 
-<h2>
+            <div class="welcome">
 
-AI Assistant Pro
+                <h1>
 
-</h2>
+                    Hello 👋
 
-</header>
+                </h1>
 
-<div
-id="chatContainer">
+                <p>
 
-<div class="welcome">
+                    Ask anything to Google Gemini.
 
-<h1>
+                </p>
 
-Hello 👋
+            </div>
 
-</h1>
+        </div>
 
-<p>
+        <div class="input-area">
 
-How can I help you today?
+            <textarea
 
-</p>
+            id="prompt"
 
-</div>
+            rows="1"
 
-</div>
+            placeholder="Ask anything..."
 
-<footer>
+            ></textarea>
 
-<textarea
+            <button
+            id="send">
 
-id="prompt"
+                Send
 
-placeholder="Ask me anything..."
+            </button>
 
-></textarea>
+        </div>
 
-<button
-
-id="send"
-
->
-
-Send
-
-</button>
-
-</footer>
+    </main>
 
 </div>
 
-</div>
-
-<script src="js/config.js"></script>
 <script src="js/api.js"></script>
+
 <script src="js/app.js"></script>
 
 </body>
