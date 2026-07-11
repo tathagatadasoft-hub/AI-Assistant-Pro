@@ -3,7 +3,7 @@
 // Gemini API
 // ==========================================================
 
-async function askAI(question) {
+async function askGemini(question) {
 
     try {
 
