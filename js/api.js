@@ -4,33 +4,49 @@
 
 async function askGemini(question) {
 
-    try {
+    const response = await fetch(API_URL, {
 
-        const response = await fetch(API_URL, {
+        method: "POST",
 
-            method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
 
-            headers: {
-                "Content-Type": "application/json"
-            },
+        body: JSON.stringify({
 
-            body: JSON.stringify({
+            contents: [
+                {
+                    parts: [
+                        {
+                            text: question
+                        }
+                    ]
+                }
+            ]
 
-                contents: [
+        })
 
-                    {
-                        parts: [
-                            {
-                                text: question
-                            }
-                        ]
-                    }
+    });
 
-                ]
+    const data = await response.json();
 
-            })
+    console.log(data);
 
-        });
+    if (!response.ok) {
+
+        throw new Error(
+
+            data.error?.message ||
+
+            "Gemini API Error"
+
+        );
+
+    }
+
+    return data.candidates[0].content.parts[0].text;
+
+}
 
         const data = await response.json();
 
