@@ -101,8 +101,10 @@ async function askGemini(question) {
 
 async function testGemini() {
 
-    const result = await askAI("Say Hello");
+    const result = await askGemini("Say Hello");
 
     console.log(result);
+
+}
 
 }
