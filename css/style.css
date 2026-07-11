@@ -1,1 +1,297 @@
+/* ==========================
+   AI Assistant Pro
+   style.css
+========================== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+}
+
+body{
+    font-family:Segoe UI,Arial,sans-serif;
+    background:#0d1117;
+    color:#fff;
+}
+
+/* Layout */
+
+.app{
+    display:flex;
+    height:100vh;
+}
+
+/* Sidebar */
+
+.sidebar{
+    width:260px;
+    background:#161b22;
+    border-right:1px solid #30363d;
+    display:flex;
+    flex-direction:column;
+}
+
+.logo{
+    padding:25px;
+    font-size:24px;
+    font-weight:bold;
+    border-bottom:1px solid #30363d;
+}
+
+#newChat{
+    margin:20px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:#238636;
+    color:white;
+    font-size:15px;
+    transition:.3s;
+}
+
+#newChat:hover{
+    background:#2ea043;
+}
+
+#history{
+    flex:1;
+    overflow-y:auto;
+    padding:15px;
+}
+
+.history-item{
+    padding:12px;
+    margin-bottom:10px;
+    border-radius:8px;
+    background:#21262d;
+    cursor:pointer;
+}
+
+.history-item:hover{
+    background:#30363d;
+}
+
+/* Main */
+
+.main{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+/* Header */
+
+header{
+    height:70px;
+    background:#161b22;
+    border-bottom:1px solid #30363d;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 25px;
+}
+
+header h1{
+    font-size:24px;
+}
+
+select{
+    background:#21262d;
+    color:white;
+    border:1px solid #30363d;
+    padding:8px 12px;
+    border-radius:8px;
+}
+
+/* Chat Area */
+
+#chatContainer{
+    flex:1;
+    overflow-y:auto;
+    padding:30px;
+}
+
+.welcome{
+    text-align:center;
+    margin-top:120px;
+    color:#8b949e;
+}
+
+.welcome h2{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.welcome p{
+    font-size:18px;
+}
+
+/* Chat Bubbles */
+
+.message{
+    display:flex;
+    margin-bottom:25px;
+}
+
+.user{
+    justify-content:flex-end;
+}
+
+.ai{
+    justify-content:flex-start;
+}
+
+.bubble{
+    max-width:75%;
+    padding:18px;
+    border-radius:14px;
+    line-height:1.7;
+    white-space:pre-wrap;
+    word-break:break-word;
+}
+
+.user .bubble{
+    background:#238636;
+}
+
+.ai .bubble{
+    background:#21262d;
+}
+
+/* Footer */
+
+footer{
+    display:flex;
+    gap:15px;
+    padding:20px;
+    border-top:1px solid #30363d;
+    background:#161b22;
+}
+
+textarea{
+    flex:1;
+    height:65px;
+    resize:none;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    padding:15px;
+    background:#21262d;
+    color:white;
+    font-size:16px;
+}
+
+button#send{
+    width:120px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    background:#238636;
+    color:white;
+    font-size:16px;
+    transition:.3s;
+}
+
+button#send:hover{
+    background:#2ea043;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#444;
+    border-radius:20px;
+}
+
+/* Code Blocks */
+
+pre{
+    background:#0d1117;
+    padding:15px;
+    border-radius:10px;
+    overflow:auto;
+}
+
+code{
+    font-family:Consolas,monospace;
+}
+
+/* Typing Indicator */
+
+.typing{
+    display:flex;
+    gap:6px;
+    padding:15px;
+}
+
+.typing span{
+    width:10px;
+    height:10px;
+    background:#bbb;
+    border-radius:50%;
+    animation:typing 1s infinite;
+}
+
+.typing span:nth-child(2){
+    animation-delay:.2s;
+}
+
+.typing span:nth-child(3){
+    animation-delay:.4s;
+}
+
+@keyframes typing{
+
+0%{
+    opacity:.2;
+    transform:translateY(0);
+}
+
+50%{
+    opacity:1;
+    transform:translateY(-5px);
+}
+
+100%{
+    opacity:.2;
+    transform:translateY(0);
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+.sidebar{
+    display:none;
+}
+
+header h1{
+    font-size:18px;
+}
+
+.bubble{
+    max-width:95%;
+}
+
+footer{
+    flex-direction:column;
+}
+
+button#send{
+    width:100%;
+}
+
+}
