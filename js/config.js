@@ -14,7 +14,7 @@ const APP_VERSION = "1.0.0";
 // -------------------------
 
 // Replace this with your own Gemini API Key
-const GEMINI_API_KEY = "AQ.Ab8RN6KrGmjooJLK1HQOqo1kHViNocAEOpnw66NxwLDSFZrUXw";
+const GEMINI_API_KEY = "AQ.Ab8RN6JgnIxxBUvagKUSCxKWQX9JX2WTmqYn8BENAxzNwivHSg";
 
 // Gemini Model
 const GEMINI_MODEL = "gemini-2.5-flash";
