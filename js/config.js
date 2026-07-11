@@ -1,13 +1,15 @@
-// ===============================
-// Google Gemini Configuration
-// ===============================
+//======================
+// API Keys
+//======================
 
-// Paste your API key below
-const API_KEY = "AQ.Ab8RN6IwNkEpsQOUrKk9rf5WHYiut5WyqVfv0FDroKCr_qXdHA";
+// Gemini
 
-// Gemini Model
-const MODEL = "gemini-2.5-flash";
+const GEMINI_API_KEY="AQ.Ab8RN6IwNkEpsQOUrKk9rf5WHYiut5WyqVfv0FDroKCr_qXdHA";
 
-// API URL
-const API_URL =
-`https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${API_KEY}`;
+const GEMINI_MODEL="gemini-2.5-flash";
+
+// OpenAI
+
+const OPENAI_API_KEY="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";
+
+const OPENAI_MODEL="gpt-5-mini";
