@@ -1,94 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Assistant Pro</title>
 
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
 
-  <!-- Markdown -->
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-  <!-- Highlight.js -->
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github-dark.min.css">
+<title>AI Assistant Pro</title>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+<link rel="stylesheet"
+href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github-dark.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+
 </head>
 
 <body>
 
 <div class="app">
 
-    <!-- Sidebar -->
+<div class="sidebar">
 
-    <aside class="sidebar">
+<div class="logo">
 
-        <div class="logo">
+🤖 AI Assistant
 
-            🤖 AI Assistant
+</div>
 
-        </div>
+<button id="newChat">
 
-        <button id="newChat">
++ New Chat
 
-            + New Chat
+</button>
 
-        </button>
+<div id="history">
 
-        <div id="history">
+</div>
 
-        </div>
+</div>
 
-    </aside>
+<div class="main">
 
-    <!-- Main -->
+<header>
 
-    <main class="main">
+<h2>
 
-        <header>
+AI Assistant Pro
 
-            <h1>AI Assistant</h1>
+</h2>
 
-            <select id="model">
+</header>
 
-                <option value="gemini">
-                    Gemini
-                </option>
+<div
+id="chatContainer">
 
-            </select>
+<div class="welcome">
 
-        </header>
+<h1>
 
-        <section id="chatContainer">
+Hello 👋
 
-            <div class="welcome">
+</h1>
 
-                <h2>Hello 👋</h2>
+<p>
 
-                <p>Ask me anything.</p>
+How can I help you today?
 
-            </div>
+</p>
 
-        </section>
+</div>
 
-        <footer>
+</div>
 
-            <textarea
-                id="prompt"
-                placeholder="Type your question..."
-            ></textarea>
+<footer>
 
-            <button id="send">
+<textarea
 
-                Send
+id="prompt"
 
-            </button>
+placeholder="Ask me anything..."
 
-        </footer>
+></textarea>
 
-    </main>
+<button
+
+id="send"
+
+>
+
+Send
+
+</button>
+
+</footer>
+
+</div>
 
 </div>
 
@@ -97,4 +110,5 @@
 <script src="js/app.js"></script>
 
 </body>
+
 </html>
