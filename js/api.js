@@ -3,9 +3,6 @@
 // Frontend API
 // ==========================================================
 
-// Your Vercel Backend URL
-const API_BASE = "https://ai-assistant-pro-kappa.vercel.app";
-
 // Ask Gemini AI
 async function askGemini(question) {
 
