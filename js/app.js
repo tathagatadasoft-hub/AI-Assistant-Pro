@@ -207,7 +207,7 @@ async function sendMessage() {
 
     try {
 
-        const answer = await askAI(question);
+        const answer = await askGemini(question);
 
         hideTyping();
 
