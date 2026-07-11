@@ -6,8 +6,7 @@ const APP_NAME = "AI Assistant Pro";
 
 const APP_VERSION = "2.0.0";
 
-const API_BASE =
-"https://YOUR-VERCEL-PROJECT.vercel.app";
+const API_BASE = "https://ai-assistant-pro-theta-nine.vercel.app/";
 
 const ENABLE_MARKDOWN = true;
 
