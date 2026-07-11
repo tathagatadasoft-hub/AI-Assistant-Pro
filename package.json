@@ -1,8 +1,6 @@
 {
   "name": "ai-assistant-pro",
   "version": "1.0.0",
-  "description": "AI Assistant using Google Gemini",
-  "main": "api/chat.js",
   "type": "module",
   "dependencies": {
     "@google/genai": "^1.16.0"
